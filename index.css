@@ -1,0 +1,127 @@
+:root{
+    --fondo_dark: #0A0A0A;
+    --lettering: #E5D8C7;
+}
+
+body{
+    background-color: var(--fondo_dark);
+    background-image: url('background.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Satoshi-Light';
+    src: url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff2') format('woff2'),
+         url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.woff') format('woff'),
+         url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.woff') format('woff'),
+         url('Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+.footer{
+    width: 100dvw;
+    height: 5dvh;
+    margin-top: 95dvh;
+    margin-left: -.5dvw;
+    background: rgba( 0, 0, 0, 0.1 );box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 8px );-webkit-backdrop-filter: blur( 8px );
+    font-size: xx-large;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.placeholder{
+    width: 99%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: .5%;
+    margin-top: .5%;
+}
+
+.icono:hover{
+    transform: translateY(-10px);
+}
+
+.icono{
+    text-decoration: underline;
+    font-size: 100%;
+}
+
+button{
+    background: white;
+    width: 10%;
+    height: 100%;
+    border: none;
+}
+
+.archivos{
+    width: 10%;
+    height: 50%;
+    position: absolute;
+    top: 10%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.whoami{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    background-color: transparent;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 60%;
+    height: 20%;
+}
+
+.nombre_desktop{
+    font-size: 15px;
+}
+
+.content:hover{
+    background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

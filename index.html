@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="footer">
+        <span class="placeholder">
+
+        <div class="inicio"><ion-icon name="logo-windows"></ion-icon></div>
+        <div class="iconos">
+            
+        </div>
+        <div class="info"><ion-icon name="help-circle-outline"></ion-icon></div>
+
+    </span>
+
+    </div>
+
+
+    <div class="archivos">
+        <div class="content whoami">
+            <ion-icon name="code-slash-outline" style="font-size: 200%;"></ion-icon>
+            <p class="nombre_desktop">Whoami.bat</p>
+        </div>
+
+        <div class="content portfolio">
+            <ion-icon name="images-outline" style="font-size: 200%;"></ion-icon>
+            <p class="nombre_desktop">Portfolio.docx</p>
+        </div>
+
+        <div class="content contact">
+            <ion-icon name="mail-outline" style="font-size: 200%;"></ion-icon>
+            <p class="nombre_desktop">Contact.txt</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const icono = document.querySelector(".icono")
+
+    icono.addEventListener("click", function(){
+        icono.classList.add('text-decoration: underline;')
+    })
+</script>

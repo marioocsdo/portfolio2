@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_mobile.css">
+    <title>Portfolio_Mobile</title>
+</head>
+<body>
+    <div class="barra"></div>
+
+    <button class="close">Close</button>
+    <button class="close_page"><ion-icon name="close-outline"></ion-icon></button>
+
+
+    <div class="know_page">KNOW ME</div>
+    <div class="portfolio_page">PORTFOLIO</div>
+    <div class="contact_page">CONTACT</div>
+
+
+    <div class="help_page">
+        <p class="help_desc"><ion-icon name="arrow-back-outline"></ion-icon> Know Me!</p>
+        <p class="help_desc"><ion-icon name="arrow-back-outline"></ion-icon> See my other projects</p>
+        <p class="help_desc"><ion-icon name="arrow-back-outline"></ion-icon> Contact Me!</p>
+    </div>
+ 
+    <div class="divider">
+        <div class="lista">
+        <button class="icono_main whoami">
+            <ion-icon name="person" style="font-size: 300%;"></ion-icon>
+        </button>
+        
+        <button class="icono_main portfolio">
+            <ion-icon name="images" style="font-size: 300%;"></ion-icon>
+        </button>
+        <button class="icono_main contact">
+            <ion-icon name="mail" style="font-size: 300%;"></ion-icon>
+        </button>
+        </div>
+
+        <div class="foto">
+            <span class="foto_holder">
+                
+            </span>
+            <h2 style="margin-left: -10%; margin-top: 2%; font-family: 'Satoshi-Light'; color: rgb(255, 238, 238); text-shadow: 0 8px 5px black;">Mario Casado</h2>
+        </div>
+
+    </div>
+
+    <div class="searchbar">
+        <input type="text" placeholder="Search...">
+        <ion-icon name="search-outline" style="position: relative; margin-left: -10%; font-size: 150%; color: #0A0A0A;"></ion-icon>
+    </div>
+
+
+    
+
+
+    <div class="footer">
+        
+            <button class="icono_ft llamar">
+                <ion-icon name="call"></ion-icon>
+            </button>
+
+            <button class="icono_ft youtube">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </button>
+            <button class="icono_ft calendar">
+                <ion-icon name="calendar-number"></ion-icon>
+            </button>
+            <button class="icono_ft help">
+                <ion-icon name="help-circle-outline"></ion-icon>
+            </button>
+    </div>
+
+</body>
+</html>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+<script>
+
+    const close = document.querySelector('.close')
+    const active = document.querySelector('.active')
+    const help = document.querySelector('.help')
+    const close_page = document.querySelector('.close_page')
+
+    const icono_main = document.querySelector('.icono_main')
+    const whoami = document.querySelector('.whoami')
+    const portfolio = document.querySelector('.portfolio')
+    const contact = document.querySelector('.contact')
+
+    const portfolio_page = document.querySelector('.portfolio_page')
+    const contact_page = document.querySelector('.contact_page')
+    const help_page = document.querySelector('.help_page')
+    const know_page = document.querySelector('.know_page')
+    
+
+    close.addEventListener("click", function(){
+
+        close.style.opacity = 0;
+        document.querySelectorAll(".know_page, .help_page, .portfolio_page, .contact_page").forEach(pagina => {
+            pagina.style.opacity = 0;
+            pagina.style.zIndex = 10;
+            document.querySelectorAll(".know_page, .help_page, .portfolio_page, .contact_page").forEach(animadas => {
+                animadas.classList.remove('animacion')
+            
+            })
+          });
+    })
+
+
+    close_page.addEventListener("click", function(){
+        window.alert("test")
+        close_page.style.opacity = 0;
+        document.querySelectorAll(".know_page, .help_page, .portfolio_page, .contact_page").forEach(pagina => {
+            pagina.style.opacity = 0;
+            pagina.style.zIndex = 10;
+            document.querySelectorAll(".know_page, .help_page, .portfolio_page, .contact_page").forEach(animadas => {
+                animadas.classList.remove('animacion')
+            
+            })
+          });
+    })
+
+    help.addEventListener("click", function(){
+        close.style.opacity = 1;
+        help_page.style.zIndex = 1001;
+        help_page.style.opacity = 1;
+    });
+
+    whoami.addEventListener("click", function(){
+        close.style.opacity = 1;
+        know_page.style.zIndex = 1001;
+        know_page.style.opacity = 1;
+    });
+
+    portfolio.addEventListener("click", function(){
+        close.style.opacity = 1;
+        portfolio_page.style.zIndex = 1001;
+        portfolio_page.style.opacity = 1;
+        portfolio_page.classList.add('animacion')
+    });
+
+    contact.addEventListener("click", function(){
+        close.style.opacity = 1;
+        contact_page.style.zIndex = 1001;
+        contact_page.style.opacity = 1;
+    });
+</script>
